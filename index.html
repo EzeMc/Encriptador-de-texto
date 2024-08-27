@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1 class="titulo">Encriptador de texto</h1>
+            
+            <textarea id="texto" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="reminder">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+            <p class="me">Desarrollado por: Ezequiel Mejia Castellanos
+                <br> eze.mc27@gmail.com</br>
+            </p>
+           
+        </div>
+        <div class="right-panel">
+            <div id="imagen-contenedor">
+                <img id="imagen" src="imagen/perrito.png" alt="Imagen inicial">
+                <p id="mensaje-imagen">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea id="mensaje" readonly style="display: none;"></textarea>
+            <button id="copiar" style="display: none;">Copiar</button>
+        </div>
+        
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 80vw;
+    margin: auto;
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+}
+
+.left-panel {
+    width: 60%;
+    padding-right: 30px;
+   /*border-right: 1px solid #ddd; */
+}
+
+.right-panel {
+    width: 40%;
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 96%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+
+p{
+    color: #666;
+    font-family: Arial, sans-serif;
+}
+p.me{
+    color: #666;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+h1{
+    color: #ee9b01;
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: white;
+    background-color: #ee9b01;
+    cursor: pointer;
+}
+
+button#desencriptar {
+    background-color: #6c757d;
+}
+
+button#copiar {
+    background-color: #ee9b01;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #da8d00;
+}
+
+button#desencriptar:hover {
+    background-color: #5a6268;
+}
+
+button#copiar:hover {
+    background-color: #da8d00;
+}
+
+#imagen-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#mensaje-imagen {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+
+    .left-panel {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+    
+    button {
+        width: 45%;
+    }
+
+    textarea {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para teléfonos */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .left-panel, .right-panel {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        height: 120px;
+        font-size: 1em;
+    }
+}
+
